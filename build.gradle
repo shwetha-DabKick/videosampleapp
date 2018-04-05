@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0-beta6'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    project.ext {
+        dabKickDeveloperId="DK29515a9bdf6e11e7a1d8062"
+        dabKickDeveloperKey="8cfa0c6f6cdc4133a8997013bb4b61"
+    }
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "http://dabkick.bitnamiapp.com/artifactory/android-dev-videosdk-local/"
+        }
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
