@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">videosample</string>
+    <string name="share_video">Share Video</string>
+    <string name="none">None</string>
+</resources>
